@@ -1,12 +1,14 @@
 <a name="readme-top"></a>
 
-  <h3 align="center">BootBoxTemplate</h3>
+  <h3 align="center">&bull; BootBoxTemplate &bull;</h3>
 
   <p align="center">
-    <br />
     <a href="https://andresanz.com">View (self-serving) Demo</a>
     ·
-    <a href="https://github.com/andresanz/bootboxtemplate/issues">Report Bug & Request Features</a>
+    <a href="https://github.com/andresanz/bootboxtemplate/issues">Report Bug</a>
+	·
+    <a href="https://github.com/andresanz/bootboxtemplate/discussions">Request Features</a>
+
   </p>
 </div>
 
