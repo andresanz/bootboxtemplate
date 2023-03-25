@@ -1,0 +1,22 @@
+{% if page.comments != false %}
+
+<div class="container" style="padding-left: 0px !important; padding-right: 0px !important;">
+			<div class="p-2 border rounded-1 bg-light mb-0"  style="background-color: white !important;">
+				<div id="disqus_thread" style="background-color: white !important;"></div>
+				<script>
+					/*
+						var disqus_config = function () {
+						this.page.url = {{ page.url | absolute_url }};
+						this.page.identifier = {{ page.url | absolute_url }};
+						};
+					*/
+					(function() { 
+						var d = document, s = d.createElement('script');
+						s.src = 'https://andre-sanz.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+					})();
+				</script>
+				<script id="dsq-count-scr" src="//andre-sanz.disqus.com/count.js" async></script>			
+			</div>
+{% endif %}

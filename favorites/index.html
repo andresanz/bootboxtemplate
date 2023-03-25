@@ -1,0 +1,47 @@
+---
+layout: default
+permalink: /favorites/
+title: Favorites
+---
+
+<body>
+	<div class="container">
+		<div class="row">
+			
+			
+			<div class="p-3 border rounded-1 bg-as">
+				<h1 class="lh-1">Favorites</h1>
+				<p class="mb-0 text-muted"><a href="/" class="as-menu-link">{{ site.shortname }}</a> / <a href="/favorites" class="as-menu-link"><strong>favorites</strong></a></p>
+			</div>
+			
+			
+			{% comment %} built via favorites.yml {% endcomment %}
+			
+			<div class="p-3 border rounded-1 bg-light mt-2">
+				
+				<div class="writing-prompt">All links on this page will open in a new browser tab</div>
+				
+				{%- assign favorites = site.data.favorites -%}
+				{%- for bookmark in favorites.bookmark -%}
+				<div>
+					
+					
+					{{ bookmark.category }}
+					
+					<ul>
+						{%- for link in bookmark.links -%}
+						<li class="taglist">
+							<div><a href="{{ link.url }}" target="_blank">{{ link.name }}</a> <span class="text-muted">{{ link.comment }}</span></div>
+						</li>
+						{%- endfor -%}
+					</ul>
+					
+					
+					{%- endfor -%}
+				</div>
+				
+				
+			</div>	
+		</div>
+	</div>
+	

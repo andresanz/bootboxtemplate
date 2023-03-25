@@ -1,0 +1,16 @@
+<div>
+	<span class="text-muted"><span style="display:block; margin-top: 0px; font-size: .70em;"><i class="meta fa-solid fa-inline fa-pen-to-square"></i>{{  page.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;
+		
+	
+		{%- assign taglinks = page.tags -%}<i class="meta-post-photos fa-solid fa-inline fa-tags"></i>{% for taglinks in page.tags %}
+		
+		{% unless forloop.last %}
+		<a class="meta" href="/blog/tags/{{ taglinks | replace: " ","-" | downcase }}" title="{{ taglinks }} Tag">{{ taglinks }}</a>,
+		{% else %}
+		
+		<a class="meta" href="/blog/tags/{{ taglinks | replace: " ","-" | downcase }}" title="{{ taglinks }} Tag">{{ taglinks }}</a>
+		
+		{% endunless %}
+		
+		{% endfor %}
+	</div>		

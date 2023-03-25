@@ -1,0 +1,23 @@
+<div>
+	<span>
+		
+		<i class="meta fa-solid fa-inline fa-pen-to-square"></i><span class="meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+		
+	<!--<i class="meta fa-solid fa-inline fa-list-ul">&nbsp;</i><a class="meta" href="/blog/categories/#{{ post.category | slugify }}" title="{{ post.category }} Category">{{ post.category }}</a>&nbsp;-->
+		
+		{%- assign taglinks = post.tags -%}
+		
+		<i class="meta fa-solid fa-inline fa-tags"></i>{% for taglinks in post.tags %}
+		
+		{% unless forloop.last %}
+		<a class="meta" href="/blog/tags/{{ taglinks | replace: " ","-" | downcase }}#{{ taglinks | replace: " ","-" | downcase }}" title="{{ taglinks }} Tag">{{ taglinks }}</a><span class="" style="color: lightgrey;"}>,</span>
+		{% else %}
+		
+		<a class="meta" href="/blog/tags/{{ taglinks | replace: " ","-" | downcase }}#{{ taglinks | replace: " ","-" | downcase }}" title="{{ taglinks }} Tag">{{ taglinks }}</a>
+		
+		{% endunless %}
+		
+		{% endfor %}
+		
+	</span>
+</div>		

@@ -1,0 +1,98 @@
+---
+layout: default
+permalink: /contact/
+title: Contact
+---
+
+<body>
+	
+	<div class="container">
+	
+		<div class="row">
+
+			
+				<div class="p-3 border rounded-1 bg-as">
+					<h1 class="mb-1 lh-1">Contact</h1>
+					
+						<p class="mb-0 text-muted"><a href="/" class="as-menu-link">{{ site.shortname }}</a> / <a href="/contact" class="as-menu-link"><strong>contact</strong></a></p>
+						
+				</div>
+			
+				<div class="p-3 border rounded-1 bg-light mt-2">
+					
+					<form id="contact-form" method="post" action="contact.php" role="form">
+						
+						<div class="messages "></div>
+						<br />
+						
+						<div class="controls">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="form_name">Firstname *</label>
+										<input id="form_name" type="text" name="name" class="mb-2 form-control" placeholder="Please enter your firstname *" required="required"
+										data-error="Firstname is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="form_lastname">Lastname *</label>
+										<input id="form_lastname" type="text" name="surname" class="mb-2 form-control" placeholder="Please enter your lastname *" required="required"
+										data-error="Lastname is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="form_email">Email *</label>
+										<input id="form_email" type="email" name="email" class="mb-2 form-control" placeholder="Please enter your email *" required="required"
+										data-error="Valid email is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="form_phone">Phone</label>
+										<input id="form_phone" type="tel" name="phone" class="mb-2 form-control" placeholder="Please enter your phone">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="form_message">Message *</label>
+								<textarea id="form_message" name="message" class="mb-2 form-control" placeholder="Your message *" rows="4" required="required"
+								data-error="Please, leave a message."></textarea>
+								<div class="help-block with-errors"></div>
+							</div>
+							
+							<p class="text-muted">
+							<strong>*</strong> These fields are required. </p>		
+							
+							
+							<div class="form-group">
+								<div class="g-recaptcha" data-sitekey="{{ site.data-sitekey }}" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+								<input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+								<div class="help-block with-errors"></div>
+							</div>
+							
+							<input type="submit" class="mt-2 btn btn-success btn-send" value="Send message" onclick="topFunction()">
+						</div>
+					</form>
+				</div>
+		</div>
+	</div>	
+	
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script src="validator.js"></script>
+		<script src="contact.js"></script>
+		
+		<script>
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+	

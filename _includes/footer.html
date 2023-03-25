@@ -1,0 +1,23 @@
+<a id="back-to-top" href="#" class="btn btn-light btn-sm back-to-top" role="button"><i class="fas fa-chevron-up"></i>
+</a>	
+
+<script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/scrolltotop.js"></script>
+
+<script>
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
+
+<script>
+	/* needed for any/all tooltips on page to appear */
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		return new bootstrap.Tooltip(tooltipTriggerEl)
+	})
+</script>	
+
+</body>
+</html>																																	

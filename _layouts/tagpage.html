@@ -1,0 +1,38 @@
+---
+layout: default 
+---
+<!-- We're going to give each page a tag when we create it.
+This will be the title -->
+
+{% for category in post.category %}
+{% capture category_name %}{{ category | first }}{% endcapture %}
+{% endfor %}
+
+
+<div class="container">
+	
+	
+	<div class="p-3 border rounded-1 bg-light">
+		<h1 class="lh-1">Tag: {{ page.tag }}</h1>
+		
+		<p class="mb-0 text-muted">
+			<a href="/" class="as-menu-link">{{ site.shortname }}</a> / <a href="/{{ post.category | slugify }}/tags/{{ page.tag | slugify }}" class="as-menu-link">{{ page.tag | downcase }}</a> (<a href="/{{ category_name | slugify }}" class="as-menu-link">{{ page.category |downcase }}</a> / <a href="/{{ category_name | slugify }}/tags" class="as-menu-link">tags</a>)
+			
+		</p>
+		
+	</div>
+	
+	
+	<div class="p-3 border rounded-1 bg-light mt-2">
+		
+		<!--<h1>{{ page.tag | capitalize }}</h1>-->
+		
+		<ul class="zerobottommargin">
+			{% for post in site.tags[page.tag] %}
+			<li>
+				<!-- {{ post.date | date: "%B %d, %Y" }}: --><a class="as-menu-link noline" href="{{ post.url }}">{{ post.title }}</a><div>{% include meta.html %}</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

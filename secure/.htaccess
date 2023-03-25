@@ -1,0 +1,4 @@
+AuthType Basic 
+AuthName “RestrictedLocation” 
+AuthUserFile /htpasswd/.jekyll.htpasswd 
+Require valid-user

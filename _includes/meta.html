@@ -1,0 +1,26 @@
+{% if page.layout contains 'tagpage' or page.layout == 'default' %}
+{% assign kind = post %}
+{% else %}
+{% assign kind = page %}
+{% endif %}
+
+<span class="material-icons-outlined md-dark">calendar_month</span> {{ kind.date | date: "%Y-%m-%d" }} / 
+
+<!--
+<span class="material-icons-outlined md-dark">category</span> <a class="as-menu-link" href="/blog/categories/#{{ kind.category | slugify }}" title="{{ kind.category }} Category">{{ kind.category }}</a> /
+-->
+		
+{%- assign taglinks = kind.tags -%}
+
+<span class="material-icons-outlined md-dark">sell</span>
+{% for taglinks in kind.tags %}
+		
+{% unless forloop.last %}
+<a class="as-menu-link" href="/{{ kind.category | slugify }}/tags/{{ taglinks | replace: " ","-" | downcase }}#{{ taglinks | replace: " ","-" | downcase }}">{{ taglinks }}</a>,
+
+{% else %}
+		
+<a class="as-menu-link" href="/{{ kind.category | slugify }}/tags/{{ taglinks | replace: " ","-" | downcase }}#{{ taglinks | replace: " ","-" | downcase }}">{{ taglinks }}</a>
+		
+{% endunless %}
+{% endfor %}

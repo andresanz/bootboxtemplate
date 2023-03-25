@@ -1,0 +1,18 @@
+<i class="as-menu-link fa-solid fa-inline fa-pen-to-square"></i>&nbsp;{{  page.date | date: "%Y-%m-%d" }}&nbsp;/&nbsp;
+
+<i class="as-menu-link fa-solid fa-inline fa-list-ul"></i>&nbsp;<a class="as-menu-link" href="/blog/categories/#{{ page.category | slugify }}" title="{{ page.category }} Category">{{ page.category }}</a>&nbsp;/&nbsp;
+
+{%- assign taglinks = page.tags -%}
+
+<i class="as-menu-link fa-solid fa-inline fa-tags"></i>{% for taglinks in page.tags %}
+
+{% unless forloop.last %}
+<a class="as-menu-link" href="/blog/tags/{{ taglinks | replace: " ","-" | downcase }}#{{ taglinks | replace: " ","-" | downcase }}" title="{{ taglinks }} Tag">{{ taglinks }}</a>,
+
+{% else %}
+
+<a class="as-menu-link" href="/blog/tags/{{ taglinks | replace: " ","-" | downcase }}#{{ taglinks | replace: " ","-" | downcase }}" title="{{ taglinks }} Tag">{{ taglinks }}</a>
+
+{% endunless %}
+
+{% endfor %}

@@ -1,0 +1,55 @@
+---
+layout: default
+permalink: /blog/
+title: Blog
+---
+
+<div class="container">
+	<div class="row">
+		
+		<div class="p-3 border rounded-1 bg-as">
+			<h1 class="lh-1">Blog</h1>
+			
+			<p class="mb-0 text-muted"><a href="/" class="as-menu-link">{{ site.shortname }}</a> / <a href="/blog" class="as-menu-link"><strong>blog</strong></a> (<a href="/blog/tags" class="as-menu-link">tags</a>)</p>
+			
+		</div>
+		
+		{% for post in site.posts %} 
+		
+		{% if post.categories contains 'Blog' %}
+		
+		
+		<div class="p-3 border rounded-1 bg-light mt-2">
+			
+			{% if post.thumbnail-image %}
+			<span class="thumbnail img-fluid float-start me-2 mt-2 mb-2 rounded-1">
+				<a href="{{ post.url }}">
+					<img src="{{ post.thumbnail-image }}" width="{{ post.thumbnail-image-width }}" height="{{ post.thumbnail-image-height }}">
+				</a>
+			</span>
+			{% else %}
+			
+			<span class="thumbnail img-fluid float-start me-2 mt-2 mb-2 rounded-1">
+				
+				<a href="{{ post.url }}"><img src="https://via.placeholder.com/150?text=&nbsp;" /></a>
+			</span>
+			{% endif %}
+			
+			{% if post.draft %}
+			<div class="blinkme" style="color: red;"> Draft Post </div>
+			{% endif %}
+			
+			<!-- post title, URL, Date and Tags -->	  
+			<span class="">
+				<a class="as-menu-link noline;" style="font-weight: 700;" href="{{ post.url }}">{{ post.title }}</a><div class="">{%- include meta.html -%}</div>
+				
+			</span>
+			<span style="display:block; margin-top: 4px;">{{ post.content | strip_html | truncatewords: 60 }}</span>
+		</div>
+		
+		{% endif %}
+		
+		{% endfor %}
+	</div>
+</div>	
+
