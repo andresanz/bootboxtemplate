@@ -5,13 +5,13 @@ shortname: "andresanz.com"
 description: "A highly experienced Information Technology Leader with a proven track record of success in managing critical IT operations, business-focused projects & customer relationships. Critical thinker, leader and communicator who can inspire changes in people and drive changes in process & technology to achieve great results. A proven track record of delivering in areas including: Client Technology, Technology Training, Service Management, Service Delivery, Program Management & Project Delivery"
 tagline: "the home of Andr&eacute; Sanz"
 
-google_analytics: G-ZMHRWTT18V
+google_analytics: ???
 
-google_search: 946da6c21ab6041d6
+google_search: ???
 
 # ReCaptcha contact form variables
-recaptchaSecret: 6LdDx4MiAAAAAMLXBuliMadtJAacAnxGuRdqM5X6
-data-sitekey: 6LdDx4MiAAAAACM5CEr20mO-N4SG_AssgfZeqXjs
+recaptchaSecret: ???
+data-sitekey: ???
 
 plugins:
     - jekyll-seo-tag 
