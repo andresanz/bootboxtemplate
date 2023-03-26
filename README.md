@@ -1,15 +1,23 @@
 <a name="readme-top"></a>
 
-  <h3 align="center">&bull; BootBoxTemplate &bull;</h3>
+https://andresanz.com/assets/images/bbt-logo.png
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/andresanz/bootboxtheme">
+    <img src="https://andresanz.com/assets/images/bbt-logo.png" alt="Logo" width="80" height="80">
+  </a>
+  
+<h3 align="center">&bull; BootBoxTemplate &bull;</h3>
 
-  <p align="center">
-    <a href="https://andresanz.com">View (self-serving) Demo</a>
-    ·
-    <a href="https://github.com/andresanz/bootboxtemplate/issues">Report Bug</a>
-	·
-    <a href="https://github.com/andresanz/bootboxtemplate/discussions">Request Features</a>
+<p align="center">
+<a href="https://andresanz.com">View (self-serving) Demo</a>
+&bull;
+<a href="https://github.com/andresanz/bootboxtemplate/issues">Report Bug</a>
+&bull;
+<a href="https://github.com/andresanz/bootboxtemplate/discussions">Request Features</a>
 
-  </p>
+</p>
 </div>
 
 
@@ -17,8 +25,7 @@
 
 [product-screenshot](https://andresanz.com/assets/images/bootboxtemplate.png)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
+There are a lot of templates for Jekyll out there, but none of them seemed to do it for me.  I was looking for a simple template that included Bootstrap 5, which was easier enough, bu
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
 * You shouldn't be doing the same tasks over and over like creating a README from scratch
@@ -59,9 +66,9 @@ To get a local copy up and running follow these simple example steps.
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
-  ```sh
-  npm install npm@latest -g
-  ```
+```sh
+npm install npm@latest -g
+```
 
 ### Installation
 
@@ -69,17 +76,17 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
+```sh
+git clone https://github.com/your_username_/Project-Name.git
+```
 3. Install NPM packages
-   ```sh
-   npm install
-   ```
+```sh
+npm install
+```
 4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+```js
+const API_KEY = 'ENTER YOUR API';
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,8 +111,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Add Additional Templates w/ Examples
 - [ ] Add "components" document to easily copy & paste sections of the readme
 - [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [ ] Chinese
+- [ ] Spanish
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
