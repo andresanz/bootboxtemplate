@@ -21,9 +21,9 @@
 
 ## About BootBoxTemplate
 
-![image info](https://andresanz.com/assets/images/bootboxtemplate.png | width=250)
+![bootboxtemplate](https://andresanz.com/assets/images/bootboxtemplate.png)
 
-[product-screenshot](https://andresanz.com/assets/images/bootboxtemplate.png)
+[bootboxtemplate-screenshot](https://andresanz.com/assets/images/bootboxtemplate.png)
 
 There are a lot of templates for Jekyll out there, but none of them seemed to do it for me.  I was looking for a simple template that included Bootstrap 5, which was easier enough, bu
 Here's why:
