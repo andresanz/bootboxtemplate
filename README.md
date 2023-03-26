@@ -1,8 +1,6 @@
 <a name="readme-top"></a>
 
-https://andresanz.com/assets/images/bbt-logo.png
 <!-- PROJECT LOGO -->
-<br />
 <div align="center">
   <a href="https://github.com/andresanz/bootboxtheme">
     <img src="https://andresanz.com/assets/images/bbt-logo.png" alt="Logo" width="80" height="80">
