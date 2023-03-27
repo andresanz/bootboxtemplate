@@ -9,7 +9,6 @@ google_analytics: G-ZMHRWTT18V
 
 google_search: 946da6c21ab6041d6
 
-# ReCaptcha contact form variables
 recaptchaSecret: 6LdDx4MiAAAAAMLXBuliMadtJAacAnxGuRdqM5X6
 data-sitekey: 6LdDx4MiAAAAACM5CEr20mO-N4SG_AssgfZeqXjs
 
@@ -37,13 +36,8 @@ include:
 exclude: 
  - ".notes"
  - "Gemfile"
- - "update"
- - "newdraft"
- - "gitpush"
- - "rundevserver"
  - "README.md"
  - "*/_exclude/"
- - "*txt.html" 
  - "*/.backup/"
  
 author:

@@ -21,15 +21,14 @@
 
 ## About BootBoxTemplate
 
-![bootboxtemplate](https://andresanz.com/assets/images/bootboxtemplate.png)
+<p align="center">![bootboxtemplate](https://andresanz.com/assets/images/bootboxtemplate.png)</a>
 
 [bootboxtemplate-screenshot](https://andresanz.com/assets/images/bootboxtemplate.png)
 
-There are a lot of templates for Jekyll out there, but none of them seemed to do it for me.  I was looking for a simple template that included Bootstrap 5, which was easier enough, bu
-Here's why:
-* one
-* two
-* three
+There are a lot of templates for Jekyll out there, but none of them seemed to do it for me.  I was looking for a simple template that included:
+* NOT Wordpress
+* Multi-blog support
+* local assets (as much as possible...)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

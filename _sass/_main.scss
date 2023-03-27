@@ -6,7 +6,6 @@
 	--as-color-leastdark: #d9dad7;
 	--as-color-reddark: #c24d2c;
 	--as-color-background: #f3f3f3;
-	
 	--as-color-white: #ffffff;
 	--as-color-light: #fff7d6;
 	--as-color-dark: #10080a;
@@ -16,13 +15,11 @@
 	--as-color-success: #59922b;
 	--as-color-warning: #fcba5b;
 	--as-color-danger: #e51c64;
-	
 	--as-color-mist: #F1EEE9;
 	--as-color-stone: #336B87;
 	--as-color-foliage: #763626;
 	--as-color-shadow: #2A3132;
 	--as-color-second: cornsilk !important;
-	
 	--as-font-family: 'KrubRegular', sans-serif;
 	--as-font-size: 1.20em;
 	--as-smaller-font-family: Arial;
@@ -94,7 +91,6 @@ li.taglist {
 		padding: 0; 
 		margin: 0; 
 		margin-left: 0px;
-		
 	}
 }
 
@@ -206,7 +202,6 @@ li.taglist {
 }
 
 .as-h1-sub {
-	
 	color: var(--as-color-mist);
 }
 
@@ -219,9 +214,6 @@ a.as-menu-link:hover, a.as-menu-link:active {
 }
 
 .as-bg {
-	/*
-		background-color: var(--as-color-reddark)!important; 
-	*/
 	background-image: var(--congruant-image);
 	background-repeat: repeat !important;
 	background-position: left top !important;
@@ -241,7 +233,6 @@ a.as-menu-link:hover, a.as-menu-link:active {
 	bottom: 20px;
 	right: 20px;
 	display: none;
-	
 }
 
 @media (min-width:414px) {
@@ -250,9 +241,6 @@ a.as-menu-link:hover, a.as-menu-link:active {
 	}
 }
 
-
-/* 2019.11.11 Hide the separation circle on small/mobile screens */
-/* nothing with screen size bigger than XYZpx */
 @media (max-width:414px) {
 	.as-hide-on-small {
 		display: none;
@@ -288,7 +276,6 @@ body {
 	padding-top: 75px;
 	padding-bottom: 50px;
 	overflow-y:scroll;
-	
 }
 
 .backblur {
@@ -298,7 +285,6 @@ body {
 	-ms-filter: blur(5px);
 	filter: blur(5px);
 }
-
 
 .fa-external-link, .fa-key {
 	margin-left: 6px;
@@ -336,4 +322,3 @@ li {
 	line-height: 1.5;
 	color: #212529;
 }
-

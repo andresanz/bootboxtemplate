@@ -4,7 +4,8 @@
 {% assign kind = page %}
 {% endif %}
 
-<span class="material-icons-outlined md-dark">calendar_month</span> {{ kind.date | date: "%Y-%m-%d" }} / 
+<!-- <span class="material-icons-outlined md-dark">calendar_month</span> {{ kind.date | date: "%Y-%m-%d" }} / -->
+<i class="fa-regular fa-calendar-days"></i> {{ kind.date | date: "%Y-%m-%d" }} /
 
 <!--
 <span class="material-icons-outlined md-dark">category</span> <a class="as-menu-link" href="/blog/categories/#{{ kind.category | slugify }}" title="{{ kind.category }} Category">{{ kind.category }}</a> /
@@ -12,7 +13,9 @@
 		
 {%- assign taglinks = kind.tags -%}
 
-<span class="material-icons-outlined md-dark">sell</span>
+<!--<span class="material-icons-outlined md-dark">sell</span>-->
+<i class="fa-solid fa-tags"></i>
+
 {% for taglinks in kind.tags %}
 		
 {% unless forloop.last %}
