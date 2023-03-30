@@ -14,7 +14,7 @@ thumbnail-image:
 thumbnail-image-width: 150px
 thumbnail-image-height: auto
 ---
-<div class="writing-prompt">
+<div class="bg-as p-2 mb-2">
 With heavy firepower, your crew has landed on a planet known to have hostile aliens that seem reptilian in their appearance. The terrain is comprised of swampland and the reptilian beings live underwater. You've put on a protective wetsuit and you're now leaving the ship to explore for the first time.
 </div>
 <div class="writing-prompt-body">

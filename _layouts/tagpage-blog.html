@@ -9,9 +9,9 @@ layout: default
 		<div class="p-3 border rounded-1 bg-as">
 			<h1 class="lh-1">Tag: {{ page.title }}</h1>
 			
-			<p class="mb-0 text-muted">
-				<a href="/" class="as-menu-link">{{ site.shortname }}</a> / <a href="/blog/tags/{{ page.tag | downcase | slugify }}" class="as-menu-link">{{ page.tag | downcase }}</a> (<a href="/blog" class="as-menu-link">blog</a> / <a href="/blog/tags" class="as-menu-link"><strong>tags</strong></a>)
-				
+			
+			<p class="mb-0">
+				<a href="/" class="as-menu-link">{{ site.shortname }}</a><i class="fa-regular fa-circle"></i><a href="/blog" class="as-menu-link">blog</a><i class="fa-regular fa-circle"></i><a href="/blog/tags" class="as-menu-link">tags</a><i class="fa-regular fa-circle"></i><a href="/blog/tags/{{ page.tag | downcase | slugify }}" class=" text-muted as-menu-link">{{ page.tag | downcase }}</a>
 			</p>
 			
 		</div>
@@ -20,8 +20,8 @@ layout: default
 			
 			<ul class="taglist">
 				{% for post in site.tags[page.tag] %}
-				<li class="taglist mb-4">
-				<!-- <span class="material-icons-outlined md-dark">signpost</span>--><i class="fa-solid fa-signs-post"></i> <a class="as-menu-link noline" href="{{ post.url }}">{{ post.title }}</a><div>{% include meta.html %}</div>
+				<li class="taglist">
+				<i class="fa-solid fa-circle"></i> <a class="as-menu-link noline" href="{{ post.url }}">{{ post.title }}</a><i class="fa-regular fa-circle"></i>{% include meta.html %}
 				</li>
 				{% endfor %}
 			</ul>

@@ -6,12 +6,11 @@ title: Favorites
 
 <body>
 	<div class="container">
-		<div class="row">
-			
+	<div class="row">
 			
 			<div class="p-3 border rounded-1 bg-as">
 				<h1 class="lh-1">Favorites</h1>
-				<p class="mb-0 text-muted"><a href="/" class="as-menu-link">{{ site.shortname }}</a> / <a href="/favorites" class="as-menu-link"><strong>favorites</strong></a></p>
+			<p class="mb-0"><a href="/" class="as-menu-link">{{ site.shortname }}</a><i class="fa-regular fa-circle"></i><a href="/favorites" class="as-menu-link text-muted">favorites</a></p>
 			</div>
 			
 			
@@ -19,12 +18,12 @@ title: Favorites
 			
 			<div class="p-3 border rounded-1 bg-light mt-2">
 				
-				<div class="writing-prompt">All links on this page will open in a new browser tab</div>
+				<div class="p-2 mb-2 bg-as">All links on this page will open in a new browser tab</div>
 				
 				{%- assign favorites = site.data.favorites -%}
 				{%- for bookmark in favorites.bookmark -%}
-				<div>
-					
+				
+				<div class="m-2">
 					
 					{{ bookmark.category }}
 					
@@ -36,12 +35,10 @@ title: Favorites
 						{%- endfor -%}
 					</ul>
 					
-					
 					{%- endfor -%}
 				</div>
-				
-				
+				</div>	
+
 			</div>	
-		</div>
 	</div>
 	

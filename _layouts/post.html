@@ -2,11 +2,12 @@
 {% include navbar.html %}
 
 <div class="container">
-	
+		<div class="row">
+
 	<div class="p-3 border rounded-1 bg-as">
 		<h1 class="lh-1">{{ page.title }}</h1>
 		
-		<p class="text-muted mb-0"><a href="/" class="as-menu-link">{{ site.shortname }}</a> / {% include meta.html %}</p>
+		<p class="mb-0"><a href="/" class="as-menu-link">{{ site.shortname }}</a><i class="fa-regular fa-circle"></i><a href="/{{ page.category | downcase }}" class="as-menu-link">{{ page.category | downcase }}</a><i class="fa-regular fa-circle"></i>{% include meta.html %}</p>
 	</div>
 	
 	<div class="p-3 border rounded-1 bg-light mt-2">
@@ -38,6 +39,7 @@
 			
 		</body>
 	</div>
+</div>
 </div>
 
 {% include footer.html %}

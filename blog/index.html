@@ -6,11 +6,11 @@ title: Blog
 
 <div class="container">
 	<div class="row">
-		
+
 		<div class="p-3 border rounded-1 bg-as">
-			<h1 class="lh-1">Blog</h1>
+			<h1 class="lh-1">{{ page.title }}</h1>
 			
-			<p class="mb-0 text-muted"><a href="/" class="as-menu-link">{{ site.shortname }}</a> / <a href="/blog" class="as-menu-link"><strong>blog</strong></a> (<a href="/blog/tags" class="as-menu-link">tags</a>)</p>
+		<p class="mb-0"><a href="/" class="as-menu-link">{{ site.shortname }}</a><i class="fa-regular fa-circle"></i><a href="/blog" class="as-menu-link text-muted">blog</a></p>
 			
 		</div>
 		
@@ -50,6 +50,6 @@ title: Blog
 		{% endif %}
 		
 		{% endfor %}
-	</div>
+</div>	
 </div>	
 

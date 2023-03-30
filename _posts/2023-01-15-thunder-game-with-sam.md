@@ -3,7 +3,7 @@ layout: post
 date: 2023-01-15T17:37:02-0500
 title: Thunder Game with Sam
 description: 
-category: Sports 
+category: Photos 
 date-modified:
 comments: true
 tags: [sam, basketball, brooklyn]
